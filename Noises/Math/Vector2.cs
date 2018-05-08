@@ -5,10 +5,10 @@
         private double _x;
         private double _y;
 
-        public double GetX()         => _x;
+        public double GetX() => _x;
         public double SetX(double x) => _x = x;
         
-        public double GetY()         => _y;
+        public double GetY() => _y;
         public double SetY(double y) => _y = y;
         
         public Vector2(double x, double y)
@@ -59,32 +59,32 @@
             _y = point;
         }
 
-        public double Dot(Vector2 other)                       => _x * other._x + _y * other._y;
-        public static double Dot(Vector2 a, Vector2 b)         => a._x * b._x + a._y * b._y;
+        public double Dot(Vector2 other) => _x * other._x + _y * other._y;
+        public static double Dot(Vector2 a, Vector2 b) => a._x * b._x + a._y * b._y;
         
         public static Vector2 operator +(Vector2 a, Vector2 b) => new Vector2(a._x + b._x, a._y + b._y);
-        public static Vector2 operator +(Vector2 a, double b)  => new Vector2(a._x + b, a._y + b);
-        public static Vector2 operator +(Vector2 a, float b)   => new Vector2(a._x + b, a._y + b);
-        public static Vector2 operator +(double a, Vector2 b)  => new Vector2(a + b._x, a + b._y);
-        public static Vector2 operator +(float a,  Vector2 b)  => new Vector2(a + b._x, a + b._y);
+        public static Vector2 operator +(Vector2 a, double b) => new Vector2(a._x + b, a._y + b);
+        public static Vector2 operator +(Vector2 a, float b) => new Vector2(a._x + b, a._y + b);
+        public static Vector2 operator +(double a, Vector2 b) => new Vector2(a + b._x, a + b._y);
+        public static Vector2 operator +(float a,  Vector2 b) => new Vector2(a + b._x, a + b._y);
         
         public static Vector2 operator -(Vector2 a, Vector2 b) => new Vector2(a._x - b._x, a._y - b._y);
-        public static Vector2 operator -(Vector2 a, double b)  => new Vector2(a._x - b, a._y - b);
-        public static Vector2 operator -(Vector2 a, float b)   => new Vector2(a._x - b, a._y - b);
-        public static Vector2 operator -(double a, Vector2 b)  => new Vector2(a - b._x, a - b._y);
-        public static Vector2 operator -(float a, Vector2 b)   => new Vector2(a - b._x, a - b._y);
+        public static Vector2 operator -(Vector2 a, double b) => new Vector2(a._x - b, a._y - b);
+        public static Vector2 operator -(Vector2 a, float b) => new Vector2(a._x - b, a._y - b);
+        public static Vector2 operator -(double a, Vector2 b) => new Vector2(a - b._x, a - b._y);
+        public static Vector2 operator -(float a, Vector2 b) => new Vector2(a - b._x, a - b._y);
 
         public static Vector2 operator *(Vector2 a, Vector2 b) => new Vector2(a._x * b._x, a._y * b._y);
-        public static Vector2 operator *(Vector2 a, double b)  => new Vector2(a._x * b, a._y * b);
-        public static Vector2 operator *(Vector2 a, float b)   => new Vector2(a._x * b, a._y * b);
-        public static Vector2 operator *(double a, Vector2 b)  => new Vector2(a * b._x, a * b._y);
-        public static Vector2 operator *(float a, Vector2 b)   => new Vector2(a * b._x, a * b._y);
+        public static Vector2 operator *(Vector2 a, double b) => new Vector2(a._x * b, a._y * b);
+        public static Vector2 operator *(Vector2 a, float b) => new Vector2(a._x * b, a._y * b);
+        public static Vector2 operator *(double a, Vector2 b) => new Vector2(a * b._x, a * b._y);
+        public static Vector2 operator *(float a, Vector2 b) => new Vector2(a * b._x, a * b._y);
 
         public static Vector2 operator /(Vector2 a, Vector2 b) => new Vector2(a._x / b._x, a._y / b._y);
-        public static Vector2 operator /(Vector2 a, double b)  => new Vector2(a._x / b, a._y / b);
-        public static Vector2 operator /(Vector2 a, float b)   => new Vector2(a._x / b, a._y / b);
-        public static Vector2 operator /(double a, Vector2 b)  => new Vector2(a / b._x, a / b._y);
-        public static Vector2 operator /(float a, Vector2 b)   => new Vector2(a / b._x, a / b._y);
+        public static Vector2 operator /(Vector2 a, double b) => new Vector2(a._x / b, a._y / b);
+        public static Vector2 operator /(Vector2 a, float b) => new Vector2(a._x / b, a._y / b);
+        public static Vector2 operator /(double a, Vector2 b) => new Vector2(a / b._x, a / b._y);
+        public static Vector2 operator /(float a, Vector2 b) => new Vector2(a / b._x, a / b._y);
 
         public bool Equals(Vector2 other)                      => _x.Equals(other._x) && _y.Equals(other._y);
         public static bool Equals(Vector2 a, Vector2 b)        => a.Equals(b);
