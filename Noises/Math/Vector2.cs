@@ -86,10 +86,10 @@
         public static Vector2 operator /(double a, Vector2 b) => new Vector2(a / b._x, a / b._y);
         public static Vector2 operator /(float a, Vector2 b) => new Vector2(a / b._x, a / b._y);
 
-        public bool Equals(Vector2 other)                      => _x.Equals(other._x) && _y.Equals(other._y);
-        public static bool Equals(Vector2 a, Vector2 b)        => a.Equals(b);
+        public bool Equals(Vector2 other) => _x.Equals(other._x) && _y.Equals(other._y);
+        public static bool Equals(Vector2 a, Vector2 b) => a.Equals(b);
 
-        public override bool Equals(object obj)                => !ReferenceEquals(null, obj) && (obj.GetType() == GetType() && Equals((Vector2) obj));
+        public override bool Equals(object obj) => !ReferenceEquals(null, obj) && (obj.GetType() == GetType() && Equals((Vector2) obj));
         
         public override int GetHashCode()
         {
